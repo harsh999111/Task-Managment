@@ -31,8 +31,8 @@ function TaskDashboard() {
   const [search, setSearch] = useState('')
   const [statusFilter, setStatusFilter] = useState('all')
   const [priorityFilter, setPriorityFilter] = useState('all')
-  const [sortBy, setSortBy] = useState('dueDate')
-  const [sortOrder, setSortOrder] = useState('asc')
+  const [sortBy, setSortBy] = useState('createdAt')
+  const [sortOrder, setSortOrder] = useState('desc')
   const [currentPage, setCurrentPage] = useState(1)
   const [editingTask, setEditingTask] = useState(null)
   const [isFormOpen, setIsFormOpen] = useState(false)
@@ -160,8 +160,8 @@ function TaskDashboard() {
     setSearch('')
     setStatusFilter('all')
     setPriorityFilter('all')
-    setSortBy('dueDate')
-    setSortOrder('asc')
+    setSortBy('createdAt')
+    setSortOrder('desc')
     setCurrentPage(1)
   }
 
